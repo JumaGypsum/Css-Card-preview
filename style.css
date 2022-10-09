@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500&display=swap');
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root{
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--cream);
+  width: 1440px;
+  display: flex;
+}
+.primary_card{
+  display: flex;
+  background-color: var(--white);
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  height: 30%;
+  margin: 50% auto;
+  border-radius: 10px;
+
+}
+.primary_card img{
+  max-width: 50%;
+  max-height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  object-fit: contain;
+}
+.sec_card h3{
+  color: var(--dark-grayish-blue);
+  margin: 0 0 20px 10px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-size: medium;
+}
+.sec_card h1{
+  font-family: 'Fraunces', serif;
+  margin: 15px 15px;
+  line-height: 1;
+}
+.sec_card p{
+  font-size: 14px;
+  color: var(--dark-grayish-blue);
+  margin: 15px;
+}
+.card_pricing{
+  margin: 15px;
+}
+.card_pricing h2{
+  color: var(--dark-cyan);
+  margin-bottom: 15px;
+}
+.card_pricing sup{
+  color: var(--dark-grayish-blue);
+  font-size: 12px;
+  margin-left: 10px;
+}
+.card_pricing a{
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  background-color: var(--dark-cyan);
+  padding: 10px 2.5rem;
+  margin: 10px ;
+  border-radius: 10px;
+  color: var(--white);
+}
+.card_pricing  a svg{
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  color: var(--white);
+  margin-right: 10px;
+}
+
+@media (max-width: 375px){
+  .primary_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .primary_card img{
+    max-width: 100%;
+    max-height: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+  .sec_card h3{
+    margin-top: 2rem;
+  }
+  .card_pricing a{
+    padding: 10px 2.3rem;
+  }
+  .card_pricing  a svg{
+    margin-right: 5px;
+  }
+  
+}
